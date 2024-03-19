@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=DotGothic16&family=Kode+Mono:wght@400..700&family=Protest+Guerrilla&family=Stick+No+Bills:wght@200..800&family=Zen+Tokyo+Zoo&display=swap');
+$primary-color: #353b48;
+$secondary-color: #7f8fa6;
+$tertiary-color: #dcdde1;
+$base-font-weight: 800;
+
+/* Mixin definition */
+@mixin flexbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Kode Mono", monospace;
+}
+
+/* Navigation styles */
+.navigation-outer {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+.bg-body-tertiary {
+    a {
+        color: $primary-color;
+        font-weight: $base-font-weight;
+        &:hover {
+            color: $secondary-color;
+        }
+    }
+}
+
+/* Home section styles */
+.home-outer{
+    width: 100%;
+    height: 100%;
+}
+.home-background{
+    width: 100%;
+    height: 100%;
+    background-color: $primary-color;
+}
+.row-home{
+    height: 90%;
+}
+.home-inner{
+    @include flexbox;
+}
+.home-inner-1{
+    background-size: cover;
+}
+.home-inner-2{
+    @include flexbox;
+    flex-direction: column;
+    color: $tertiary-color;
+    align-items: flex-start;
+    h3{
+        font-size: 180%;
+    }
+    h1{
+        font-size: 280%;
+        span{
+            color: $secondary-color;
+        }
+    }
+}
+.home-inner-2-header{
+    margin-top: 20px;
+}
+.home-inner-2-button{
+    background-color:$tertiary-color;
+    padding: 5px 25px;
+    border-radius: 15px;
+    @include flexbox;
+    margin: 0 0 40px 0;
+    a{
+        font-size: 50%;
+        @include flexbox;
+        color:$primary-color;
+        text-decoration: none;
+        h3{
+            font-weight: $base-font-weight;
+            text-align: center;
+            margin-top: 10px;
+        }
+    }
+}
+.home-widgets-outer{
+    margin-top: -20px;
+    background-color: $primary-color;
+}
+.home-widget-container{
+    margin: 0;
+}
+.widget-outer{
+    margin: 20px 0;
+}
+.widget-inner{
+    height: 250px;
+    @include flexbox;
+    flex-direction: column;
+    background-color: $tertiary-color;
+    border-radius: 20px;
+}
+.widget-inner-top{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: $secondary-color;
+    @include flexbox;
+    
+}
+.widget-inner-icon{
+    @include flexbox;
+    i{
+        scale: 4;
+    }
+}
+.widget-inner-bottom{
+    margin: 20px 0;
+}
+
+/* Skills section styles */
+.skills-outer{
+    width: 100vw;
+    height: 100vh;
+    background-color: aquamarine;
+}
