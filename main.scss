@@ -172,3 +172,12 @@ $base-font-weight: 800;
         }
     }
 }
+.skills-widget-2{
+    color: $tertiary-color;
+    @include flexbox;
+    flex-direction: column;
+    ul{
+        list-style: none;
+        line-height: 150%;
+    }
+}
