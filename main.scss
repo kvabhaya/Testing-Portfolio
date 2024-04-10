@@ -180,6 +180,9 @@ $base-font-weight: 800;
     ul{
         list-style: none;
         line-height: 150%;
+        li{
+            font-size: 130%;
+        }
     }
 }
 .projects-outer{
